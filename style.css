@@ -3,6 +3,16 @@ margin:0 ;
 text-align: center;
 
 }
+/* Typographic */
+@font-face {
+    font-family: "Cursed Timer ULiL";
+    src: url("CursedTimerULiL.ttf");
+}
+
+#home-score, #guest-score,button {
+    font-family: "Cursed Timer ULiL" ;
+}
+
 
 /* LAYOUT */
 
@@ -26,5 +36,7 @@ text-align: center;
 }
 
 button {
+    border: 1px solid orange;
     margin: 20px 0 40px 0;
+    padding: 10px 15px;
 }
