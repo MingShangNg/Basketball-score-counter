@@ -1,0 +1,30 @@
+body{
+margin:0 ;
+text-align: center;
+
+}
+
+/* LAYOUT */
+
+.container {
+    margin: 0 auto;
+    width: 400px;
+    background:linear-gradient(orange, yellow);
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 5px solid black;
+}
+
+#home-score, #guest-score {
+    border: 5px solid blue;
+    padding: 10px 10px;
+    font-size: 2rem;
+    background-color: black;
+    color:red;
+    margin-bottom: 0;
+}
+
+button {
+    margin: 20px 0 40px 0;
+}
