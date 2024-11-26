@@ -1,16 +1,19 @@
-body{
-margin:0 ;
-text-align: center;
+body {
+    margin: 0;
+    text-align: center;
 
 }
+
 /* Typographic */
 @font-face {
     font-family: "Cursed Timer ULiL";
     src: url("CursedTimerULiL.ttf");
 }
 
-#home-score, #guest-score,button {
-    font-family: "Cursed Timer ULiL" ;
+#home-score,
+#guest-score,
+button {
+    font-family: "Cursed Timer ULiL";
 }
 
 
@@ -19,19 +22,32 @@ text-align: center;
 .container {
     margin: 0 auto;
     width: 400px;
-    background:linear-gradient(orange, yellow);
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
+    background: linear-gradient(orange, yellow);
+
     border: 5px solid black;
 }
 
-#home-score, #guest-score {
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#new-game {
+    background-color: lightblue;
+    font-weight: bold;
+    font-size: 10 rem;
+    text-shadow:  20px 20px 20pxr red;
+
+}
+
+#home-score,
+#guest-score {
     border: 5px solid blue;
     padding: 10px 10px;
     font-size: 2rem;
     background-color: black;
-    color:red;
+    color: red;
     margin-bottom: 0;
 }
 
