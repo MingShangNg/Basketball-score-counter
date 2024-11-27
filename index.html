@@ -13,22 +13,24 @@
 <body>
   <h1>BASKETBALL SCORE</h1>
   <div class="container">
+    <h3 id="timer">Time:60s</h3>
     <div class="flex">
       <div class="home">
         <h2>HOME</h2>
         <p id="home-score">0</p>
-        <button id="add-one" onclick="addOneHome()">+1</button>
-        <button id="add-two" onclick="addTwoHome()">+2</button>
-        <button id="add-three" onclick="addThreeHome()">+3</button>
+        <button id="add-one" onclick="updateScore('home' , 1)">+1</button>
+        <button id="add-two" onclick="updateScore('home' , 2)">+2</button>
+        <button id="add-three" onclick="updateScore('home' , 3)">+3</button>
       </div>
       <div class="guest">
         <h2>GUEST</h2>
         <p id="guest-score">0</p>
-        <button id="add-one" onclick="addOneGuest()">+1</button>
-        <button id="add-two" onclick="addTwoGuest()">+2</button>
-        <button id="add-three" onclick="addThreeGuest()">+3</button>
+        <button id="add-one" onclick="updateScore('guest' , 1)">+1</button>
+        <button id="add-two" onclick="updateScore('guest' , 2)">+2</button>
+        <button id="add-three" onclick="updateScore('guest' , 3)">+3</button>
       </div>
     </div>
+    <button onclick="startGame()">Start Game</button>
     <button onclick="newGame()" id="new-game">New Game</button>
   </div>
 
